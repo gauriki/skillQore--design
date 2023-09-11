@@ -3,8 +3,8 @@ import { Button } from "@nextui-org/react";
 import React from "react";
 import { CategoriesCard } from "./categoriesCard";
 import { ExploreCard } from "./exploreCard";
+import { Footer } from "./footer";
 import { PostCard } from "./postCard";
-import { SkillQoreCard } from "./skillQoreCard";
 
 export function Section() {
   return (
@@ -149,7 +149,7 @@ export function Section() {
           />
         </div>
       </div>
-      <SkillQoreCard />
+      <Footer />
     </section>
   );
 }

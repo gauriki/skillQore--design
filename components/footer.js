@@ -1,10 +1,17 @@
 import { Button } from "@nextui-org/react";
+import {
+  BiLogoInstagram,
+  BiLogoLinkedin,
+  BiLogoPinterestAlt,
+} from "react-icons/bi";
+import { FaTwitter } from "react-icons/fa";
+import { TiSocialFacebook } from "react-icons/ti";
 
-export function SkillQoreCard() {
+export function Footer() {
   return (
     <div className="bg-white px-8 py-4">
       <img src="images/logo.png" alt="" className="h-16 w-26" />
-      <div className="grid grid-cols-3 gap-10 pt-4">
+      <div className="grid grid-cols-3 gap-10 pt-4 pb-4">
         <div className="space-y-[2px]">
           <h1 className="text-[#363537] text-base font-bold py-2">Learning</h1>
           <p className="text-[#363537] text-base">My Account</p>
@@ -37,6 +44,35 @@ export function SkillQoreCard() {
             <Button className="shadow-lg bg-gradient-to-r from-[#FF6900] to-[#F49000] rounded-r-full font-semibold text-base text-white ">
               SUBSCRIBE
             </Button>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-between pt-4 border-t border-t-slate-300">
+        <div>
+          <div className="flex gap-8">
+            <p className="text-[#363537] text-base ">Privacy</p>
+            <p className="text-[#363537] text-base ">Terms of Use</p>
+            <p className="text-[#363537] text-base ">Cookies</p>
+          </div>
+          <p className="text-[#9a9a9a] text-sm pt-5">
+            © 2020 Skillqore, Inc. All Rights Reserved.
+          </p>
+        </div>
+        <div className="flex gap-8">
+          <div className="bg-[#ECF5F6] p-3 flex justify-center items-center h-10 w-10">
+            <TiSocialFacebook className="text-[#534BF9] text-2xl " />
+          </div>
+          <div className="bg-[#ECF5F6] p-3 flex justify-center items-center h-10 w-10">
+            <FaTwitter className="text-[#534BF9] text-2xl " />
+          </div>
+          <div className="bg-[#ECF5F6] p-3 flex justify-center items-center h-10 w-10">
+            <BiLogoLinkedin className="text-[#534BF9] text-2xl " />
+          </div>
+          <div className="bg-[#ECF5F6] p-3 flex justify-center items-center h-10 w-10">
+            <BiLogoInstagram className="text-[#534BF9] text-2xl " />
+          </div>
+          <div className="bg-[#ECF5F6] p-3 flex justify-center items-center h-10 w-10">
+            <BiLogoPinterestAlt className="text-[#534BF9] text-2xl  " />
           </div>
         </div>
       </div>
