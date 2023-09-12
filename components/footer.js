@@ -47,7 +47,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex justify-between pt-4 border-t border-t-slate-300">
+      <div className=" flex-col  flex md:flex-row gap-4 justify-between pt-4 border-t border-t-slate-300">
         <div>
           <div className="flex gap-8">
             <p className="text-[#363537] text-base ">Privacy</p>

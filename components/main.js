@@ -5,7 +5,7 @@ import { Section } from "./section";
 
 export function Main() {
   return (
-    <main className="mx-auto container h-fit relative min-h-screen py-4 ">
+    <main className="mx-auto container h-fit relative min-h-screen py-2 md:py-4 ">
       <Header />
       <ImageCard />
       <img

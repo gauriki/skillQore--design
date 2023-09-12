@@ -107,7 +107,7 @@ export function Section() {
         <h1 className="text-center text-[#4f4f6f] text-3xl font-bold">
           Explore Skillqore
         </h1>
-        <div className="grid-cols-2 gap-80  grid md:grid-cols-3  py-8">
+        <div className="grid-cols-2 gap-10 md:gap-80  grid md:grid-cols-3  py-8">
           <ExploreCard
             title="Online Course Providers"
             name1="LinkedIn Learning"

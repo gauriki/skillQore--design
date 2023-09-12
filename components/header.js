@@ -5,14 +5,19 @@ import {
   DropdownMenu,
   DropdownTrigger,
 } from "@nextui-org/react";
+import { AiOutlineMenu } from "react-icons/ai";
 import { BiSearch } from "react-icons/bi";
 
 export function Header() {
   return (
-    <header className="px-8 py-1 flex justify-between items-center">
+    <header className=" px-8 py-1 flex justify-between items-center">
       <div className="flex items-center gap-6">
-        <img src="images/logo.png" alt="" className="w-26 h-16" />
-        <div>
+        <img
+          src="images/logo.png"
+          alt=""
+          className=" w-24 h-12 md:w-26 md:h-16"
+        />
+        <div className="hidden md:block">
           <Dropdown>
             <DropdownTrigger>
               <Button className="capitalize">EXPLORE CATEGORIES</Button>
@@ -42,8 +47,11 @@ export function Header() {
           </Button>
         </div>
       </div>
-      <button className="rounded-3xl text-[#544CF9] text-sm border-2 border-[#544CF9] font-bold px-8 py-2">
+      <button className="hidden md:block rounded-3xl text-[#544CF9] text-sm border-2 border-[#544CF9] font-bold px-8 py-2">
         LOG IN
+      </button>
+      <button className="md:hidden">
+        <AiOutlineMenu />
       </button>
     </header>
   );
